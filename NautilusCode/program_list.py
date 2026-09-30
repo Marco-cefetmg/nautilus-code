@@ -147,3 +147,7 @@ progs += Program('zed', _('Zed'),
 
 progs += Program('zed-preview', _('Zed (Preview)'),
                   Flatpak('dev.zed.Zed-Preview'))
+
+progs += Program('guake', _('guake'),
+                 Native('guake'),
+                 arguments=['--new-tab={}', '--show'])
